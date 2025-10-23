@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Ulang Tahun 💝</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Musik -->
+  <audio id="bgMusic" src="yung kai - blue (ORIGINAL KEY) - INDO INDIE KARAOKE.mp3" preload="auto" loop></audio>
+
+  <!-- Page 1 -->
+  <section class="page active" id="page1">
+    <div class="container">
+      <img src="IMG-20250831-WA0001.jpg" alt="Foto Fitri" class="photo">
+      <h1>Hai Kak Fitriii </h1>
+      <p>Aku punya sesuatu nih, coba diliat yaa...</p>
+      <button onclick="nextPage(2)">Klik di sini 💌</button>
+    </div>
+  </section>
+
+  <!-- Page 2 -->
+  <section class="page" id="page2">
+    <div class="container">
+      <h1>Selamat Ulang Tahun yang Ke-20 yaa 🎂</h1>
+      <p id="message2"></p>
+    </div>
+  </section>
+
+  <!-- Page 3 -->
+  <section class="page" id="page3">
+    <div class="container">
+      <h1>🫣🤙🏻</h1>
+      <img id="slideshow" src="IMG-20250831-WA0001.jpg" class="photo">
+      <p>Siapa ya inii 😝</p>
+    </div>
+  </section>
+
+  <!-- Page 4 -->
+  <section class="page" id="page4">
+    <div class="container">
+      <h1>Kamu suka ngga?? 💌</h1>
+      <div id="question">
+        <button onclick="answer(true)">Iyaa, suka 💖</button>
+        <button onclick="answer(false)">Kurang suka 😅</button>
+      </div>
+      <p id="finalMessage" class="hidden"></p>
+      <a id="waLink" class="hidden" href="https://wa.me/+6281228708968?text=Hai%20sayang%20aku%20suka%20banget%20project%20ulang%20tahunnya%20" target="_blank">Chat aku di WhatsApp 💬</a>
+      <button onclick="restart()">Kembali ke Awal 🌹</button>
+    </div>
+  </section>
+
+  <canvas id="confetti"></canvas>
+
+  <footer>© 2025 by Satria Adhi Permana Putra </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
