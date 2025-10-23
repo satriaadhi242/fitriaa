@@ -32,6 +32,7 @@ function restart() {
 
 function startMessage() {
   const lines = [
+    "Semoga panjang umur, sehat selalu, dilancarkan rejekinya",
     "Semoga harimu seindah senyumanmu 💋",
     "Semua impianmu bisa tercapai tahun ini 😊",
     "Segala urusanmu dipermudah",
@@ -90,7 +91,7 @@ function answer(isYes) {
     waLink.classList.remove("hidden");
     startConfetti();
   } else {
-    msg.innerHTML = "Yahh, kurang suka ya 😅 next time tak coba lagi ya hehehe 💫";
+    msg.innerHTML = "Yahhh kurang suka ternyata, next time aku coba lagi ya 😅";
     waLink.classList.add("hidden");
   }
 }
@@ -125,3 +126,4 @@ function animateConfetti() {
   });
   if (confettiParticles.length > 0) requestAnimationFrame(animateConfetti);
 }
+
